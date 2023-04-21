@@ -1,3 +1,6 @@
 [submodule "themes/geekb"]
 	path = themes/geekb
 	url = https://github.com/pages-themes/architect.git
+[submodule "themes/geek"]
+	path = themes/geek
+	url = https://github.com/pages-themes/architect.git
