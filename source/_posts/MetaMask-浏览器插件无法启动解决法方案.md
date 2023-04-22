@@ -1,8 +1,14 @@
 ---
 title: MetaMask 浏览器插件无法启动解决法方案
 date: 2023-04-22 14:34:25
-tags:
+tags: 
+- block chain
+- 区块链
+- 钱包
+categories:
+- 区块链
 ---
+
 在没有备份过助记词/私钥，同时重启插件/电脑均无法解决的情况下，可在电脑本地全局搜索 nkbihfbeogaeaoehlefnkodbefgpgknn，这是 MM 扩展 id，如这个目录下：C:\Users\[User]\AppData\Local\Google\Chrome\User Data\Default\Local Extension Settings\nkbihfbeogaeaoehlefnkodbefgpgknn 找到 ldb/log 这些文件，在这些文件里找到如图目标内容。 后用 https://metamask.github.io/vault-decryptor/解开这段目标内容，Password 就是目标 MetaMask 扩展的密码。 
 
 ```
