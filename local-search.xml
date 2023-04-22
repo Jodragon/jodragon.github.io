@@ -4,6 +4,19 @@
   
   
   <entry>
+    <title>MetaMask 浏览器插件无法启动解决法方案</title>
+    <link href="/2023/04/22/MetaMask-%E6%B5%8F%E8%A7%88%E5%99%A8%E6%8F%92%E4%BB%B6%E6%97%A0%E6%B3%95%E5%90%AF%E5%8A%A8%E8%A7%A3%E5%86%B3%E6%B3%95%E6%96%B9%E6%A1%88/"/>
+    <url>/2023/04/22/MetaMask-%E6%B5%8F%E8%A7%88%E5%99%A8%E6%8F%92%E4%BB%B6%E6%97%A0%E6%B3%95%E5%90%AF%E5%8A%A8%E8%A7%A3%E5%86%B3%E6%B3%95%E6%96%B9%E6%A1%88/</url>
+    
+    <content type="html"><![CDATA[<p>在没有备份过助记词&#x2F;私钥，同时重启插件&#x2F;电脑均无法解决的情况下，可在电脑本地全局搜索 nkbihfbeogaeaoehlefnkodbefgpgknn，这是 MM 扩展 id，如这个目录下：C:\Users[User]\AppData\Local\Google\Chrome\User Data\Default\Local Extension Settings\nkbihfbeogaeaoehlefnkodbefgpgknn 找到 ldb&#x2F;log 这些文件，在这些文件里找到如图目标内容。 后用 <a href="https://metamask.github.io/vault-decryptor/%E8%A7%A3%E5%BC%80%E8%BF%99%E6%AE%B5%E7%9B%AE%E6%A0%87%E5%86%85%E5%AE%B9%EF%BC%8CPassword">https://metamask.github.io/vault-decryptor/解开这段目标内容，Password</a> 就是目标 MetaMask 扩展的密码。 </p><figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs json"><span class="hljs-punctuation">&#123;</span><span class="hljs-attr">&quot;data&quot;</span><span class="hljs-punctuation">:</span><span class="hljs-string">&quot;6vllhjdFt2RX/g6yxFN9CqSpKJlzzuXaRqeClxpEhZtPv3zLVib4Eq/sOpfcERJu01iuv37WT8w+kponTH+5IMH8DWSUr3FsmxcjQCJTJoc7E/iBx9fki1o9KaYtrWZcsMf3X1fGurR9lUIqtAKNZLOqDKY4POAszB+KerAGKVnzpJ6FhcahTgHzYkQeJ9Q+qzoO0VHxAqbeS1ZJhgmBtln92XV/MUXEPF1AcbJF76m10JQVo+sg1u4iOapxNep+R/K+HopMpoyB8Q6HluV23wyxbCXA6kEEuwJ91LLpRi7EFLoNhJK1/lTG5+CrXFZE/WYQ6+gFlzSlwqIKPr2cnbUwktsj2/rFJ5sgmnVRMzdx+JseQO8e8YZhveABkzexQ2kKr+auWYKZYThACPCPy8Z7yBXPL3jd6AVK1Ubc/xVVGY1n73dwIkOY6PO+/OcS++XQ/QwvCCDVSTshHxtumSqVNfxrTeI8RKwV3xPyh0BIuXY6xn+5Di58MLpREesEwd4nOXKn6Xw5SqNuEsUS7Sjh8RhD01krg0GSCQVnfWFhMTQH/Q/euCHo9OA5yuwG6iyBBAl9WwLcaypZuOibPc+MDkcHp9V+rwP0SSEF8dF2gQgP//jaPYZm6bm70SWwndzHE8g0HZhiy3kCnm1LP0YMpH5vLoD/Fb6OxXsKsOdUR9Jzl/xIJKJA1JqSkHHnDPELceaYJFX6vkbevstBg6CuY+FlfBqG2UtMCM19bLpaBQ134lZkAUUdHPsWRjgSWHWvqco8A1E9RjdMrMMzQrIMDaaP82UPNkXaU19E2Ij+I5jvr26PNMSL9qnGdmC6+kxkr/MBUpWtK2DUzU2ZGnVImqms3De0Is9ldLnbQmp8bOYwq+XT5aOYu7aSR10y5mKH6B2V4swBKqZIuGFHpGkGkXYQsoY1wQ+BNQbMX7pPXO5Wiq4N7smYYZ3a3PvmX6KelE3f8+1ulVg1r+1s0PmnFxFr+6tog2IDPdrJL8lfqpTtcDRXIaMsp+Tj24+y9OIZFktsTkqdAzaMfbtg==&quot;</span><span class="hljs-punctuation">,</span><span class="hljs-attr">&quot;iv&quot;</span><span class="hljs-punctuation">:</span><span class="hljs-string">&quot;kleBujFi5T+123iZU5CVEw==&quot;</span><span class="hljs-punctuation">,</span><span class="hljs-attr">&quot;salt&quot;</span><span class="hljs-punctuation">:</span><span class="hljs-string">&quot;WVsdQtIhPkDiJfN5ORg9Eubm5jqyKFm3J9oWNLRKc=&quot;</span><span class="hljs-punctuation">&#125;</span><br></code></pre></td></tr></table></figure><p>若 MM 的任意扩展页面可以打开，比如：chrome-extension:&#x2F;&#x2F;nkbihfbeogaeaoehlefnkodbefgpgknn&#x2F;home.html，则用下面的方式也有得到待解密的内容： </p><figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs stylus">chrome<span class="hljs-selector-class">.storage</span><span class="hljs-selector-class">.local</span><span class="hljs-selector-class">.get</span>(<span class="hljs-string">&#x27;data&#x27;</span>, result =&gt; &#123;  <br>    <span class="hljs-selector-tag">var</span> vault = result<span class="hljs-selector-class">.data</span><span class="hljs-selector-class">.KeyringController</span><span class="hljs-selector-class">.vault</span>  <br>    console<span class="hljs-selector-class">.log</span>(vault) &#125;)<br></code></pre></td></tr></table></figure>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>Hello World</title>
     <link href="/2023/04/22/hello-world/"/>
     <url>/2023/04/22/hello-world/</url>
