@@ -3,17 +3,17 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
-subtitle: ''
-description: ''
+title: Dino
+subtitle: '111'
+description: '222'
 keywords:
-author: John Doe
+author: Dino
 language: zh-CN
 timezone: ''
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: http://example.com
+url: https://jodragon.github.io/
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
