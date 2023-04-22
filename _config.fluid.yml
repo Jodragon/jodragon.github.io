@@ -946,15 +946,14 @@ about:
   banner_img: /img/default.png
   banner_img_height: 60
   banner_mask_alpha: 0.3
-  avatar: /img/avatar.png
-  name: "Fluid"
-  intro: "An elegant theme for Hexo"
+  avatar: /img/dino-big.png
+  name: "Dino"
+  intro: "随便写写"
   # 更多图标可从 https://hexo.fluid-dev.com/docs/icon/ 查找，`class` 代表图标的 css class，添加 `qrcode` 后，图标不再是链接而是悬浮二维码
   # More icons can be found from https://hexo.fluid-dev.com/docs/en/icon/  `class` is the css class of the icon. If adding `qrcode`, The icon is no longer a link, but a hovering QR code
   icons:
-    - { class: "iconfont icon-github-fill", link: "https://github.com", tip: "GitHub" }
-    - { class: "iconfont icon-douban-fill", link: "https://douban.com", tip: "豆瓣" }
-    - { class: "iconfont icon-wechat-fill", qrcode: "/img/favicon.png" }
+    - { class: "iconfont icon-github-fill", link: "https://github.com/Jodragon", tip: "GitHub" }
+    - { class: "iconfont icon-telegram-fill", link: "https://t.me/Dino_zhao", tip: "TG" }
 
 
 #---------------------------
@@ -997,7 +996,7 @@ links:
   # Member item of page
   items:
     - {
-      title: "Fluid Blog",
+      title: "Dino Blog",
       intro: "主题博客",
       link: "https://hexo.fluid-dev.com/",
       avatar: "/img/favicon.png"
