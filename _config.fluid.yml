@@ -42,7 +42,7 @@ code:
   # 代码语言
   # Code language
   language:
-    enable: true
+    enable: false
     default: "python"
 
   # 代码高亮
