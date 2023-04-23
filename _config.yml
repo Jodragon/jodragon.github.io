@@ -6,10 +6,10 @@
 title: Dino
 subtitle: '111'
 description: '222'
-keywords:
+keywords: ETH,区块链,BTC,比特币,以太坊
 author: Dino
 language: zh-CN
-timezone: ''
+timezone: 'Asia/Shanghai'
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
