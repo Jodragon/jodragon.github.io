@@ -43,7 +43,7 @@ code:
   # Code language
   language:
     enable: true
-    default: "TEXT"
+    default: "python"
 
   # 代码高亮
   # Code highlight
@@ -64,7 +64,7 @@ code:
       # Select a style in the link
       # See: https://highlightjs.org/static/demo/
       style: "Github"
-      style_dark: "Github Dark Dimmed"
+      style_dark: "Github Dark"
 
     prismjs:
       # 在下方链接页面右侧的圆形按钮挑选 style 填入，也可以直接填入 css 链接
