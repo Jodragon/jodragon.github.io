@@ -52,7 +52,7 @@ code:
 
     # 代码块是否显示行号
     # If true, the code block display line numbers
-    line_number: true
+    line_number: false
 
     # 实现高亮的库，对应下面的设置
     # Highlight library
@@ -63,8 +63,8 @@ code:
       # 在链接中挑选 style 填入
       # Select a style in the link
       # See: https://highlightjs.org/static/demo/
-      style: "github gist"
-      style_dark: "dark"
+      style: "Github"
+      style_dark: "Github Dark Dimmed"
 
     prismjs:
       # 在下方链接页面右侧的圆形按钮挑选 style 填入，也可以直接填入 css 链接
