@@ -24,7 +24,7 @@
 <meta property="og:description" content="相关文献：https:&#x2F;&#x2F;zhejiang.launchpad.ethereum.org&#x2F;en&#x2F;withdrawals#excess-balance-withdrawals https:&#x2F;&#x2F;docs.prylabs.network&#x2F;docs&#x2F;wallet&#x2F;withdraw-validator https:&#x2F;&#x2F;ethereum.org&#x2F;zh&#x2F;staking&#x2F;withdrawals&#x2F;#checking">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2023-04-22T20:46:22.000Z">
-<meta property="article:modified_time" content="2023-04-23T03:25:47.250Z">
+<meta property="article:modified_time" content="2023-04-23T03:46:29.011Z">
 <meta property="article:author" content="Dino">
 <meta property="article:tag" content="区块链">
 <meta property="article:tag" content="以太坊">
@@ -222,7 +222,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          5.6k 字
+          5.5k 字
         
       </span>
     
@@ -233,7 +233,7 @@
         
         
         
-          47 分钟
+          46 分钟
         
       </span>
     
@@ -313,7 +313,7 @@
 <li><strong><a target="_blank" rel="noopener" href="https://github.com/ethereum/staking-deposit-cli/releases">安装 staking-deposit-cli 的稳定版本</a></strong></li>
 <li><strong><a target="_blank" rel="noopener" href="https://github.com/prysmaticlabs/prysm/releases">安装 prysmctl 的稳定版</a></strong></li>
 </ul>
-<h4 id="部分（收益）提取设置流程："><a href="#部分（收益）提取设置流程：" class="headerlink" title="部分（收益）提取设置流程："></a>部分（收益）提取设置流程：</h4><h4 id="1、签署请求设置您的以太坊取款地址（BLS-to-Execution-Change）"><a href="#1、签署请求设置您的以太坊取款地址（BLS-to-Execution-Change）" class="headerlink" title="1、签署请求设置您的以太坊取款地址（BLS to Execution Change）"></a>1、签署请求设置您的以太坊取款地址（<strong>BLS to Execution Change</strong>）</h4><figure class="highlight verilog"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs verilog">python ./staking_deposit/deposit<span class="hljs-variable">.py</span> <span class="hljs-keyword">generate</span>-bls-to-execution-change<br></code></pre></td></tr></table></figure>
+<h4 id="部分（收益）提取设置流程："><a href="#部分（收益）提取设置流程：" class="headerlink" title="部分（收益）提取设置流程："></a>部分（收益）提取设置流程：</h4><h4 id="1、签署请求设置您的以太坊取款地址（BLS-to-Execution-Change）"><a href="#1、签署请求设置您的以太坊取款地址（BLS-to-Execution-Change）" class="headerlink" title="1、签署请求设置您的以太坊取款地址（BLS to Execution Change）"></a>1、签署请求设置您的以太坊取款地址（<strong>BLS to Execution Change</strong>）</h4><div class="code-wrapper"><pre><code class="hljs verilog">python ./staking_deposit/deposit<span class="hljs-variable">.py</span> <span class="hljs-keyword">generate</span>-bls-to-execution-change</code></pre></div>
 
 <h5 id="交互式过程"><a href="#交互式过程" class="headerlink" title="交互式过程:"></a>交互式过程:</h5><ol>
 <li>选择你的助记语言。</li>
@@ -328,27 +328,72 @@
 <p>此过程涉及到助记词建议离线进行！！！</p>
 <p>验证器索引和提款凭证可以在<a target="_blank" rel="noopener" href="http://beaconcha.in/">Beaconcha.in</a>上获取</p>
 </blockquote>
-<figure class="highlight tp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><code class="hljs tp"><span class="hljs-comment">//操作示例</span><br><span class="hljs-comment">python ./staking_deposit/deposit.py generate-bls-to-execution-change</span><br><span class="hljs-comment">Please choose your language [&#x27;1. العربية&#x27;, &#x27;2. ελληνικά&#x27;, &#x27;3. English&#x27;, &#x27;4. Français&#x27;, &#x27;5. Bahasa melayu&#x27;, &#x27;6. Italiano&#x27;, &#x27;7. 日本語&#x27;, &#x27;8. 한국어&#x27;, &#x27;9. Português do Brasil&#x27;, &#x27;10. român&#x27;, &#x27;11. Türkçe&#x27;, &#x27;12. 简体中文&#x27;]:  [English]: english</span><br><span class="hljs-comment"></span><br><span class="hljs-comment">Please choose the (mainnet or testnet) network/chain name [&#x27;mainnet&#x27;, &#x27;goerli&#x27;, &#x27;sepolia&#x27;, &#x27;zhejiang&#x27;]:  [mainnet]: zhejiang</span><br><span class="hljs-comment"></span><br><span class="hljs-comment">Please enter your mnemonic separated by spaces (&quot; &quot;). Note: you only need to enter the first 4 letters of each word if you&#x27;d prefer.: </span><br><span class="hljs-comment">bike shoe attitude violin fun life punch enhance attend bright voyage wheel clutch taxi high health siren jealous tell female upon firm manual wage</span><br><span class="hljs-comment"></span><br><span class="hljs-comment">Please enter the index (key number) of the signing key you want to use with this mnemonic. [0]: 0</span><br><span class="hljs-comment"></span><br><span class="hljs-comment">Please enter a list of the validator indices of your validator(s). Split multiple items with whitespaces or commas.: 8</span><br><span class="hljs-comment"></span><br><span class="hljs-comment">Please enter a list of the old BLS withdrawal credentials of your validator(s). Split multiple items with whitespaces or commas.: 00a6bd30000296e9c9f5823b09e689ff0bc0b1bea1d256caab9a5f213a226b33</span><br><span class="hljs-comment"></span><br><span class="hljs-comment">Please enter the 20-byte execution address for the new withdrawal credentials. Note that you CANNOT change it once you have set it on chain.: 0x9B984D5a03980D8dc0a24506c968465424c81DbE</span><br><span class="hljs-comment"></span><br><span class="hljs-comment">**[Warning] you are setting an Eth1 address as your withdrawal address. Please ensure that you have control over this address.**</span><br><span class="hljs-comment"></span><br><span class="hljs-comment">Repeat your execution address for confirmation.: 0x9B984D5a03980D8dc0a24506c968465424c81DbE</span><br><span class="hljs-comment"></span><br><span class="hljs-comment">**[Warning] you are setting an Eth1 address as your withdrawal address. Please ensure that you have control over this address.**</span><br><span class="hljs-comment"></span><br><span class="hljs-comment">Success!</span><br><span class="hljs-comment">Your SignedBLSToExecutionChange JSON file can be found at: /home/me/Desktop/code/python/staking-deposit-cli/bls_to_execution_changes</span><br></code></pre></td></tr></table></figure>
+<div class="code-wrapper"><pre><code class="hljs tp"><span class="hljs-comment">//操作示例</span>
+<span class="hljs-comment">python ./staking_deposit/deposit.py generate-bls-to-execution-change</span>
+<span class="hljs-comment">Please choose your language [&#x27;1. العربية&#x27;, &#x27;2. ελληνικά&#x27;, &#x27;3. English&#x27;, &#x27;4. Français&#x27;, &#x27;5. Bahasa melayu&#x27;, &#x27;6. Italiano&#x27;, &#x27;7. 日本語&#x27;, &#x27;8. 한국어&#x27;, &#x27;9. Português do Brasil&#x27;, &#x27;10. român&#x27;, &#x27;11. Türkçe&#x27;, &#x27;12. 简体中文&#x27;]:  [English]: english</span>
+<span class="hljs-comment"></span>
+<span class="hljs-comment">Please choose the (mainnet or testnet) network/chain name [&#x27;mainnet&#x27;, &#x27;goerli&#x27;, &#x27;sepolia&#x27;, &#x27;zhejiang&#x27;]:  [mainnet]: zhejiang</span>
+<span class="hljs-comment"></span>
+<span class="hljs-comment">Please enter your mnemonic separated by spaces (&quot; &quot;). Note: you only need to enter the first 4 letters of each word if you&#x27;d prefer.: </span>
+<span class="hljs-comment">bike shoe attitude violin fun life punch enhance attend bright voyage wheel clutch taxi high health siren jealous tell female upon firm manual wage</span>
+<span class="hljs-comment"></span>
+<span class="hljs-comment">Please enter the index (key number) of the signing key you want to use with this mnemonic. [0]: 0</span>
+<span class="hljs-comment"></span>
+<span class="hljs-comment">Please enter a list of the validator indices of your validator(s). Split multiple items with whitespaces or commas.: 8</span>
+<span class="hljs-comment"></span>
+<span class="hljs-comment">Please enter a list of the old BLS withdrawal credentials of your validator(s). Split multiple items with whitespaces or commas.: 00a6bd30000296e9c9f5823b09e689ff0bc0b1bea1d256caab9a5f213a226b33</span>
+<span class="hljs-comment"></span>
+<span class="hljs-comment">Please enter the 20-byte execution address for the new withdrawal credentials. Note that you CANNOT change it once you have set it on chain.: 0x9B984D5a03980D8dc0a24506c968465424c81DbE</span>
+<span class="hljs-comment"></span>
+<span class="hljs-comment">**[Warning] you are setting an Eth1 address as your withdrawal address. Please ensure that you have control over this address.**</span>
+<span class="hljs-comment"></span>
+<span class="hljs-comment">Repeat your execution address for confirmation.: 0x9B984D5a03980D8dc0a24506c968465424c81DbE</span>
+<span class="hljs-comment"></span>
+<span class="hljs-comment">**[Warning] you are setting an Eth1 address as your withdrawal address. Please ensure that you have control over this address.**</span>
+<span class="hljs-comment"></span>
+<span class="hljs-comment">Success!</span>
+<span class="hljs-comment">Your SignedBLSToExecutionChange JSON file can be found at: /home/me/Desktop/code/python/staking-deposit-cli/bls_to_execution_changes</span></code></pre></div>
 
 <blockquote>
 <p>此过程会生成一个<code>bls_to_execution_changes-*.json</code>文件</p>
 </blockquote>
-<h5 id="验证hash"><a href="#验证hash" class="headerlink" title="验证hash"></a>验证hash</h5><figure class="highlight reasonml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs reasonml"><span class="hljs-comment">//这个方法的结果是你的取款凭证，如果对得上证明参数是正确的</span><br>echo <span class="hljs-number">0</span>x<span class="hljs-constructor">$(<span class="hljs-params">echo</span> -<span class="hljs-params">n</span> &#x27;0xaf6b29b5c440170bc773b688119ff4b035466473096697dd7d3dce5e2bcdacf017d599b1dd23f5906dfb3e3c79207a45&#x27; | <span class="hljs-params">xxd</span> -<span class="hljs-params">r</span> -<span class="hljs-params">p</span> | <span class="hljs-params">sha256sum</span> | <span class="hljs-params">cut</span> -<span class="hljs-params">d</span> &#x27; &#x27; -<span class="hljs-params">f</span> 1)</span>	<br></code></pre></td></tr></table></figure>
+<h5 id="验证hash"><a href="#验证hash" class="headerlink" title="验证hash"></a>验证hash</h5><div class="code-wrapper"><pre><code class="hljs reasonml"><span class="hljs-comment">//这个方法的结果是你的取款凭证，如果对得上证明参数是正确的</span>
+echo <span class="hljs-number">0</span>x<span class="hljs-constructor">$(<span class="hljs-params">echo</span> -<span class="hljs-params">n</span> &#x27;0xaf6b29b5c440170bc773b688119ff4b035466473096697dd7d3dce5e2bcdacf017d599b1dd23f5906dfb3e3c79207a45&#x27; | <span class="hljs-params">xxd</span> -<span class="hljs-params">r</span> -<span class="hljs-params">p</span> | <span class="hljs-params">sha256sum</span> | <span class="hljs-params">cut</span> -<span class="hljs-params">d</span> &#x27; &#x27; -<span class="hljs-params">f</span> 1)</span></code></pre></div>
 
 
 
 <h4 id="2、将您签名的请求提交到以太坊网络"><a href="#2、将您签名的请求提交到以太坊网络" class="headerlink" title="2、将您签名的请求提交到以太坊网络"></a>2、将您签名的请求提交到以太坊网络</h4><p>此过程会使用到上一步生成的文件</p>
-<figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><code class="hljs awk">prysmctl validator withdraw --beacon-node-host=&lt;node-url&gt; --path=&lt;bls_to_execution_changes-*.json&gt; <br><br>prysmctl validator withdraw --beacon-node-host=localhost:<span class="hljs-number">3500</span> --path=<span class="hljs-regexp">/home/u</span>buntu<span class="hljs-regexp">/prysmctl/</span>bls-change/bls_to_execution_change-<span class="hljs-number">1681812857</span>.json --confirm --accept-terms-of-use<br><br>or<br><br>curl -X POST -H <span class="hljs-string">&#x27;Content-type: application/json&#x27;</span> -d @&lt;@FILENAME DESTINATION&gt; \<br>http:<span class="hljs-regexp">//</span>&lt;BEACON_NODE_HTTP_API_URL&gt;<span class="hljs-regexp">/eth/</span>v1<span class="hljs-regexp">/beacon/</span>pool/bls_to_execution_changes<br><br>curl -X POST -H <span class="hljs-string">&#x27;Content-type: application/json&#x27;</span> -d <span class="hljs-string">&#x27;@/home/ubuntu/withdraw-validator/staking_deposit-cli-d7b5304-linux-amd64/bls_to_execution_changes/bls_to_execution_change-1678889108.json&#x27;</span> \<br>http:<span class="hljs-regexp">//</span>localhost:<span class="hljs-number">3500</span><span class="hljs-regexp">/eth/</span>v1<span class="hljs-regexp">/beacon/</span>pool/bls_to_execution_changes<br><br><br><br>./deposit --language=english generate-bls-to-execution-change \<br>--chain=goerli \<br>--mnemonic=<span class="hljs-string">&quot;razor ** skate punch poem *** pelican flat project popular ***** water ivory social beach **** photo random explain brown ahead tomato alien invest&quot;</span> \<br>--bls_withdrawal_credentials_list=<span class="hljs-string">&quot;0x00d621567c26382b332c9acce27baca16f99dda01149b15057cad86ba5738e9c&quot;</span> \<br>--validator_start_index=<span class="hljs-number">0</span> \<br>--validator_indices=<span class="hljs-string">&quot;393623&quot;</span> \<br>--execution_address=<span class="hljs-string">&quot;0x8Fba9B6F96f6faB0bE13A21CDc426D1531d126E7&quot;</span><br></code></pre></td></tr></table></figure>
+<div class="code-wrapper"><pre><code class="hljs awk">prysmctl validator withdraw --beacon-node-host=&lt;node-url&gt; --path=&lt;bls_to_execution_changes-*.json&gt; 
+
+prysmctl validator withdraw --beacon-node-host=localhost:<span class="hljs-number">3500</span> --path=<span class="hljs-regexp">/home/u</span>buntu<span class="hljs-regexp">/prysmctl/</span>bls-change/bls_to_execution_change-<span class="hljs-number">1681812857</span>.json --confirm --accept-terms-of-use
+
+or
+
+curl -X POST -H <span class="hljs-string">&#x27;Content-type: application/json&#x27;</span> -d @&lt;@FILENAME DESTINATION&gt; \
+http:<span class="hljs-regexp">//</span>&lt;BEACON_NODE_HTTP_API_URL&gt;<span class="hljs-regexp">/eth/</span>v1<span class="hljs-regexp">/beacon/</span>pool/bls_to_execution_changes
+
+curl -X POST -H <span class="hljs-string">&#x27;Content-type: application/json&#x27;</span> -d <span class="hljs-string">&#x27;@/home/ubuntu/withdraw-validator/staking_deposit-cli-d7b5304-linux-amd64/bls_to_execution_changes/bls_to_execution_change-1678889108.json&#x27;</span> \
+http:<span class="hljs-regexp">//</span>localhost:<span class="hljs-number">3500</span><span class="hljs-regexp">/eth/</span>v1<span class="hljs-regexp">/beacon/</span>pool/bls_to_execution_changes
+
+
+
+./deposit --language=english generate-bls-to-execution-change \
+--chain=goerli \
+--mnemonic=<span class="hljs-string">&quot;razor ** skate punch poem *** pelican flat project popular ***** water ivory social beach **** photo random explain brown ahead tomato alien invest&quot;</span> \
+--bls_withdrawal_credentials_list=<span class="hljs-string">&quot;0x00d621567c26382b332c9acce27baca16f99dda01149b15057cad86ba5738e9c&quot;</span> \
+--validator_start_index=<span class="hljs-number">0</span> \
+--validator_indices=<span class="hljs-string">&quot;393623&quot;</span> \
+--execution_address=<span class="hljs-string">&quot;0x8Fba9B6F96f6faB0bE13A21CDc426D1531d126E7&quot;</span></code></pre></div>
 
 
 
 <h4 id="3、确认提款地址是否设置成功"><a href="#3、确认提款地址是否设置成功" class="headerlink" title="3、确认提款地址是否设置成功"></a>3、确认提款地址是否设置成功</h4><p><a target="_blank" rel="noopener" href="http://beaconcha.in/">像Beaconcha.in</a>就包含跟踪取款的功能，还可以用本地节点的rpc进行确认。</p>
-<figure class="highlight rust"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs rust">curl -X <span class="hljs-symbol">&#x27;GET</span>&#x27; \  <span class="hljs-symbol">&#x27;http</span>:<span class="hljs-comment">//YOUR_PRYSM_NODE_HOST:3500/eth/v1/beacon/states/head/validators/YOUR_VALIDATOR_INDEX&#x27; \  -H &#x27;accept: application/json&#x27;</span><br></code></pre></td></tr></table></figure>
+<div class="code-wrapper"><pre><code class="hljs rust">curl -X <span class="hljs-symbol">&#x27;GET</span>&#x27; \  <span class="hljs-symbol">&#x27;http</span>:<span class="hljs-comment">//YOUR_PRYSM_NODE_HOST:3500/eth/v1/beacon/states/head/validators/YOUR_VALIDATOR_INDEX&#x27; \  -H &#x27;accept: application/json&#x27;</span></code></pre></div>
 
 
 
 <h4 id="二、全额提取设置流程："><a href="#二、全额提取设置流程：" class="headerlink" title="二、全额提取设置流程："></a>二、全额提取设置流程：</h4><p>全额提取流程与部分提取流程一样，区别是验证器已退出则全部取款。</p>
-<h4 id="三、退出验证器："><a href="#三、退出验证器：" class="headerlink" title="三、退出验证器："></a>三、退出验证器：</h4><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs awk">prysmctl validator <span class="hljs-keyword">exit</span> --wallet-dir=&lt;path<span class="hljs-regexp">/to/</span>wallet&gt; --beacon-rpc-provider=&lt;<span class="hljs-number">127.0</span>.<span class="hljs-number">0.1</span>:<span class="hljs-number">4000</span>&gt; <br></code></pre></td></tr></table></figure>
+<h4 id="三、退出验证器："><a href="#三、退出验证器：" class="headerlink" title="三、退出验证器："></a>三、退出验证器：</h4><div class="code-wrapper"><pre><code class="hljs awk">prysmctl validator <span class="hljs-keyword">exit</span> --wallet-dir=&lt;path<span class="hljs-regexp">/to/</span>wallet&gt; --beacon-rpc-provider=&lt;<span class="hljs-number">127.0</span>.<span class="hljs-number">0.1</span>:<span class="hljs-number">4000</span>&gt;</code></pre></div>
 
 <h5 id="退出验证需要的时间："><a href="#退出验证需要的时间：" class="headerlink" title="退出验证需要的时间："></a>退出验证需要的时间：</h5><p>想要退出验证需要验证者至少活跃256个epoch约27小时才可以提交申请，</p>
 <p>退出验证需要排队，取决于当前排队的验证者数量。</p>
