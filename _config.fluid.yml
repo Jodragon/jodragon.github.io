@@ -534,7 +534,7 @@ index:
 # Post Page
 #---------------------------
 post:
-  banner_img: /img/wp12.jpeg
+  banner_img: /img/wp18.jpeg
   banner_img_height: 70
   banner_mask_alpha: 0.3
 
@@ -899,7 +899,7 @@ archive:
 #---------------------------
 category:
   enable: true
-  banner_img: /img/wp11.jpeg
+  banner_img: /img/wp19.jpeg
   banner_img_height: 60
   banner_mask_alpha: 0.3
 
@@ -945,7 +945,7 @@ tag:
 #---------------------------
 about:
   enable: true
-  banner_img: /img/wp14.png
+  banner_img: /img/wp11.jpeg
   banner_img_height: 60
   banner_mask_alpha: 0.3
   avatar: /img/avatar.jpeg
