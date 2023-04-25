@@ -534,7 +534,7 @@ index:
 # Post Page
 #---------------------------
 post:
-  banner_img: /img/wp17.jpeg
+  banner_img: /img/wp18.jpeg
   banner_img_height: 70
   banner_mask_alpha: 0.3
 
@@ -888,7 +888,7 @@ giscus:
 # Archive Page
 #---------------------------
 archive:
-  banner_img: /img/wp16.jpeg
+  banner_img: /img/wp13.jpg
   banner_img_height: 60
   banner_mask_alpha: 0.3
 
@@ -928,7 +928,7 @@ category:
 #---------------------------
 tag:
   enable: true
-  banner_img: /img/wp15.jpeg
+  banner_img: /img/wp14.jpeg
   banner_img_height: 80
   banner_mask_alpha: 0.3
   tagcloud:
