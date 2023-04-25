@@ -265,7 +265,7 @@ sudo systemctl status grafana-server
 ## 总结
 
 至此整套以太坊节点就搭建完成了，等待执行层和共识层同步完成，就可以尝试质押一个validator，然后把密钥导入aws运行了，然后可以在grafana仪表板查看各种状态。
-
+如果对docker比较熟悉可以用docker compose更加方便。
 
 
 
