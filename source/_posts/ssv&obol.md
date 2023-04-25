@@ -3,11 +3,11 @@ title: ssv vs obol
 date: 2023-02-24 19:18:25
 tags: 
 - ETH
-categories:
-- ETH
 - ssv
 - obol
 - DVT
+categories:
+- ETH
 ---
 
 2023.02.24
