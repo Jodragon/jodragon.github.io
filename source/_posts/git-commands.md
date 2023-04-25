@@ -3,7 +3,7 @@ title: "Git基础命令"
 date: 2023-04-25 10:50:57
 tags:
 - Git
-catagories:
+categories:
 - Git
 ---
 
