@@ -24,7 +24,7 @@
 <meta property="og:description" content="前期准备：本文采用geth+prysm+mev-boost+web3signer+aws Secrets Manager+Grafana&amp;Prometheus架构搭建。 geth：执行层节点。 prysm：共识层节点和validator。 mev-boost：使用mev构建区块。 web3signer：用来管理密钥远程签名。 aws Secrets Manager：存储密钥。 Grafan">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2022-11-25T03:25:25.000Z">
-<meta property="article:modified_time" content="2023-04-25T08:57:48.885Z">
+<meta property="article:modified_time" content="2023-04-25T09:05:52.650Z">
 <meta property="article:author" content="Dino">
 <meta property="article:tag" content="ETH">
 <meta property="article:tag" content="以太坊">
@@ -235,7 +235,7 @@
         
         
         
-          55 分钟
+          56 分钟
         
       </span>
     
@@ -509,7 +509,7 @@ sudo systemctl status grafana-server
 <blockquote>
 <p>本文所有的组件都可以添加到grafana，这里就不多说了。</p>
 </blockquote>
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>至此整套以太坊节点就搭建完成了，等待执行层和共识层同步完成，就可以尝试质押一个validator，然后把密钥导入aws运行了，然后可以在grafana仪表板查看各种状态。</p>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>至此整套以太坊节点就搭建完成了，等待执行层和共识层同步完成，就可以尝试质押一个validator，然后把密钥导入aws运行了，然后可以在grafana仪表板查看各种状态。<br>如果对docker比较熟悉可以用docker compose更加方便。</p>
 <h2 id="参考文档："><a href="#参考文档：" class="headerlink" title="参考文档："></a>参考文档：</h2><p><a target="_blank" rel="noopener" href="https://grafana.com/docs/">https://grafana.com/docs/</a></p>
 <p><a target="_blank" rel="noopener" href="https://prometheus.io/docs/">https://prometheus.io/docs/</a></p>
 <p><a target="_blank" rel="noopener" href="https://docs.prylabs.network/docs/">https://docs.prylabs.network/docs/</a></p>
